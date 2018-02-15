@@ -1,0 +1,562 @@
+@charset "utf-8";
+body {
+	margin-top: 0px;
+	background:#CCC;
+}
+
+/* Encabezado */
+#principal{
+	width:1050px;
+}
+#border-top.h_blue {
+	background: url(../imagen/j_header_middle.png) repeat-x;
+}
+
+#border-top.h_blue div {
+	background: url(../imagen/j_header_right.png) 100% 0 no-repeat;
+}
+
+#border-top.h_blue div div {
+	background: url(../imagen/j_header_left.png) no-repeat;
+	height: 20px;
+}
+
+/* Pie */
+
+#border-bottom {
+	clear: both;
+	background: url(../imagen/j_bottom.png) repeat-x;
+}
+
+#border-bottom div {
+	background: url(../imagen/j_corner_br.png) 100% 0 no-repeat;
+}
+
+#border-bottom div div {
+	background: url(../imagen/j_corner_bl.png) no-repeat;
+	height: 11px;
+}
+
+/* Contenido */
+#content-box {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	float: left;
+	width: 99.85%;
+	background:#FFF;
+}
+
+#content-box .padding {
+	padding: 5px 30px 30px 30px;
+}
+/* menu*/
+#header-box {
+	border: 1px solid #ccc;
+	background: #f0f0f0;
+	height:28px;
+}
+#menu,
+#menu ul,
+#menu li {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+#menu {
+	position: relative;
+	z-index: 100;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 0.73em;
+}
+
+#menu li {
+	float: left;
+	position: relative;
+	display: inline;
+	list-style: none outside none;
+
+}
+
+#menu li a {
+	display: block;
+	white-space: nowrap;
+}
+
+#menu li ul {
+	visibility: hidden;
+	position: absolute;
+}
+
+#menu li li ul {
+	top: 0;
+	left: 0;
+}
+
+#menu li:hover ul {
+	visibility: visible;
+}
+
+#menu li:hover ul li ul {
+	visibility: hidden;
+}
+
+#menu li:hover li:hover ul {
+	visibility: visible;
+	left: 100%;
+}
+
+#menu li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+}
+
+#menu li li {
+	border: 0;
+	display: block;
+	float: none;
+}
+
+#menu ul {
+	border: 0.1em solid #ccc;
+	background: #f6f6f6 url(../imagen/bg-menu.gif) repeat-y left;
+}
+
+#menu ul li.node {
+	background: transparent url(../imagen/j_arrow.png) no-repeat right 50%;
+}
+
+#menu ul li.separator {
+	background: #DDE1E6 url(../imagen/bg-menu.gif);
+	height: 1px ;
+}
+#menu a,
+#menu div {
+	padding: 0.35em 1em 0.35em;
+	margin: 0 1px 0 1px;
+	color: #333333;
+	line-height: 1.6em;
+	vertical-align: middle;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: default;
+	background-repeat: no-repeat;
+	background-position: left 50%;
+}
+
+#menu li.disabled a,
+#menu li.disabled:hover a {
+	color: gray;
+	background-color: transparent;
+	margin: 0 1px;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+#menu ul a {
+	font-size: 1em;
+	font-weight: normal;
+	padding-left: 25px;
+	padding-right: 20px;
+	line-height: 1.2em;
+}
+
+/* 1 nivel - hover */
+#menu li:hover a {
+	background-color: #dbe4e9;
+	border-left: 1px solid #025a8d;
+	border-right: 1px solid #025a8d;
+	margin: 0;
+}
+
+/* 2 nivel - normal */
+#menu li:hover li a {
+	background-color: transparent;
+	border: 1px solid transparent;
+	margin: 1px;
+	text-align:left;
+}
+
+/* 2 nivel - hover */
+#menu li:hover li:hover a {
+	background-color: #dbe4e9;
+	border-color: #025a8d;
+	text-align:left;
+}
+
+/* 3 nivel - normal */
+#menu li:hover li:hover li a {
+	background-color: transparent;
+	border-color: transparent;
+	text-align:left;
+}
+
+/* 3 nivel - hover */
+#menu li:hover li:hover li a:hover {
+	background-color: #dbe4e9;
+	border-color: #025a8d;
+	text-align:left;
+}
+.perfiles	{background-image: url(../imagen/iconosmenu/perfiles.png);}
+.usuarios	{background-image: url(../imagen/iconosmenu/usuarios.png);}
+.contrasenia{background-image: url(../imagen/iconosmenu/contrasenia.png);}
+.articulos{background-image: url(../imagen/iconosmenu/articulos.png);}
+.segmentos{background-image: url(../imagen/iconosmenu/segmentos.png);}
+.datos		{background-image: url(../imagen/iconosmenu/datos.png);}
+.reporte	{background-image: url(../imagen/iconosmenu/reporte.png);}
+.comparativo{background-image: url(../imagen/iconosmenu/comparativo.png);}
+.buscarCliente{background-image: url(../imagen/iconosmenu/buscarCliente.png);}
+.actualizarCliente{background-image: url(../imagen/iconosmenu/actualizarCliente.png);}
+.actividadesVendedor{background-image: url(../imagen/iconosmenu/actividadesVendedor.png);}
+.grupos{background-image: url(../imagen/iconosmenu/grupos.png);}
+.mensaje{background-image: url(../imagen/iconosmenu/mensaje.png);}
+
+.usuario {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:10px;
+	color:#333;
+}
+.ruta {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:12px;
+	font-weight:bold;
+	color:#333;
+}
+.textoContacto {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:14px;
+	font-weight:bold;
+	color:#006; /*#167FB2;*/
+}
+
+.fondoEncabezado {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	font-weight:bold;
+	color:#ffffff;
+	background:#167FB2;
+	height:22px;		
+}
+.fondoEncabezadoCliente {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:11px;
+	font-weight:bold;
+	color:#ffffff;
+	background:#666;  /*#167FB2;*/
+	height:22px;		
+}
+
+.fondoEncabezadoMensaje {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:12px;
+	font-weight:bold;
+	color:#ffffff;
+	background:#167FB2;
+	height:22px;		
+}
+
+.fila1 {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#000000;
+	background:#DDDDDD;
+	height:22px;		
+}
+.fila2 {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#000000;
+	background:#F0F0F0;
+	height:22px;		
+}
+.fila1Cliente {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:12px;
+	color:#000000;
+	background:#DDDDDD;
+	height:22px;			
+}
+.fila2Cliente {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:12px;
+	color:#000000;
+	background:#F0F0F0;
+	height:22px;		
+}
+.filaIntermedia {
+	padding-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:12px;
+	color:#167FB2;
+	background:#FFF;
+	height:22px;		
+}
+
+
+.vinculo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color:#333;
+	text-decoration: underline;
+	cursor:pointer;
+}
+.vinculo:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color:#FA6E00;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.vinculo:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color:#FA6E00;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.vinculoCh {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#333;
+	text-decoration: underline;
+}
+.vinculoCh:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#FA6E00;
+	text-decoration: underline;
+}
+
+.etiqueta {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#333;
+}
+.etiquetaCliente {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:11px;
+	color:#333;
+}
+
+.boton {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	background:#666;
+	color:#ffffff;
+}
+.botonClaro {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	background:#CCC;
+	color:#000;
+}
+
+.campoTexto{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#666;	
+}
+.campoTextoChico{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:11px;
+	color:#666;	
+}
+.campoSelect{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#666;	
+}
+.campoSelectFijo{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#666;
+	width:200px;
+}
+.campoListaFijo{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#666;
+	width:180px;
+}
+.opcionBaja{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#aaa;	
+}
+.borde{
+	border:#F30 solid 1px;
+}
+.campoSelectMedio{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:12px;
+	color:#666;	
+}
+.campoSelectChico{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:11px;
+	color:#666;	
+}
+
+.sinDatos{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:12px;
+	color:#F00;	
+}
+.sinDatosChico{
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:11px;
+	color:#F00;	
+}
+.mesajeOk{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#036;
+	border:solid 1px #036;
+}
+.mesajeError{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#F00;
+	border:solid 1px #F00;	
+}	
+
+.areaScroll{
+	overflow-y:visible;
+	overflow-x:hidden;
+	width:100%;
+	height:100%;
+	vertical-align:middle;
+}
+
+div.autocomplete {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	position:absolute;
+	width:500px;
+	background-color:white;
+	border:1px solid #000;
+	margin:2px;
+	padding:2px;
+	left:4px;
+}
+div.autocomplete ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	height:100%
+}
+div.autocomplete ul li.selected { background-color: #ff0;}
+div.autocomplete ul li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	list-style-type:none;
+	display:block;
+	margin:0;
+	padding:2px;
+	cursor:pointer;
+}
+
+.autoCompleteRFC{
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#440000;
+}
+
+.validation-advice{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color:#990000;
+	background-color:#FFFFFF;
+}
+
+#areaSelPersona{	
+	overflow:auto;
+	width:265px;
+	height:180px;	
+}
+#areaSelGrupo{	
+	overflow:auto;
+	width:265px;
+	height:120px;	
+}
+
+.campoArchivo{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	width:200px;
+}
+.campoTitulo{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;	
+	width:250px;
+}
+
+.cuadroEncabezado{
+	background-image: url(../imagen/j_header_middle.png);
+	font-family:Arial, Helvetica, sans-serif;
+	vertical-align:bottom;
+	text-align:center;
+	font-weight:bold;
+	font-size:12px;
+	color:#FFF;
+	height:20px;
+}
+.cuadroLateral{
+	background-image: url(../imagen/lineaVertical.jpg);
+	width:1px;	
+}
+.cuadroInferior{
+	background-image: url(../imagen/lineaHorizontal.jpg);
+	height:1px;	
+}
+.textoDashNoticias{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+.ligaMensajePersonal,
+.ligaMensajePersonal:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#036;	
+}
+
+.noticiaEncabezado {
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+  	font-size:15px;
+	font-weight:bold;
+	color:#ffffff;
+	background:#167FB2;
+	height:30px;		
+}
+.noticiaSubtitulo {
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#111;
+	background:#ccc;
+	height:28px;
+}
+
+.noticiaCuerpo {
+	padding:20px;
+	font-family:Arial, Helvetica, sans-serif;
+  	font-size:13px;
+	color:#111;
+	background:#eee;
+}
